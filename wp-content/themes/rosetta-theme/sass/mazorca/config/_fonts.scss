@@ -1,0 +1,28 @@
+//_________________________ Config:Fuentes _________________________ \\
+
+/**
+ * Declare fonts using the Mixin
+ */
+// declara-font-face($font-family, $font-filename, $font-weight: normal, $font-style: normal, $font-stretch: normal)
+
+// Rosetta
+@include declara-font-face(CormorantGaramond, '../fonts/CormorantGaramond/CormorantGaramond-Light', 300, normal);
+@include declara-font-face(CormorantGaramond, '../fonts/CormorantGaramond/CormorantGaramond-LightItalic', 300, italic);
+@include declara-font-face(CormorantGaramond, '../fonts/CormorantGaramond/CormorantGaramond-Medium', 500, normal);
+@include declara-font-face(CormorantGaramond, '../fonts/CormorantGaramond/CormorantGaramond-MediumItalic', 500, italic);
+@include declara-font-face(CormorantGaramond, '../fonts/CormorantGaramond/CormorantGaramond-Regular', normal, normal);
+
+@include declara-font-face(SofiaPro, '../fonts/SofiaPro/SofiaProLight', 300, normal);
+@include declara-font-face(SofiaPro, '../fonts/SofiaPro/SofiaProRegular', normal, normal);
+
+/// Refer to font families through mapped variables.
+/// Font families must be written as lists, that is, between parenthesis.
+
+$fonts:(
+	cormorant:		('CormorantGaramond', serif),
+	sofia: 			('SofiaPro', sans),
+);
+
+@function f($font) {
+	@return map-get($fonts, $font);
+}

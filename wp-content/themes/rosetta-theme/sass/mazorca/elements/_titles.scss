@@ -1,0 +1,24 @@
+%title {
+	
+}
+
+//Reservaciones
+%titulo-reservaciones, .titulo-reservaciones {
+    @extend %cormorant-medium;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: c(green);
+    &::first-letter {
+        font-size: 32px;
+    }
+}
+
+//Libro
+%titulo-libro, .titulo-libro {
+    @extend %cormorant-medium;
+    font-size: 25px;
+    color: c(green);
+    &::first-letter {
+        font-size: 32px;
+    }
+}

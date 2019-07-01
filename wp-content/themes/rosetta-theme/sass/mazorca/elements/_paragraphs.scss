@@ -1,0 +1,90 @@
+%paragraph {
+
+}
+
+/* *** F o n t s *** */
+%cormorant-light {
+	font-family: f(cormorant);
+	font-weight: 300;
+	font-style: normal;
+}
+
+%cormorant-light-italic {
+	font-family: f(cormorant);
+	font-weight: 300;
+	font-style: italic;
+}
+
+%cormorant-medium {
+	font-family: f(cormorant);
+	font-weight: 500;
+	font-style: normal;
+}
+
+%cormorant-medium-italic {
+	font-family: f(cormorant);
+	font-weight: 500;
+	font-style: italic;
+}
+
+%cormorant-regular {
+	font-family: f(cormorant);
+	font-weight: normal;
+	font-style: normal;
+}
+
+%sofia-light {
+	font-family: f(sofia);
+	font-weight: 300;
+	font-style: normal;
+}
+
+%sofia-regular {
+	font-family: f(sofia);
+	font-weight: normal;
+	font-style: normal;
+}
+
+//About
+%texto-about, .texto-about {
+	@extend %cormorant-regular;
+	font-size: 18px;
+	color: c(green);
+}
+
+//Cocina
+%texto-cocina, .texto-cocina {
+	@extend %cormorant-light;
+	font-size: 22px;
+	color: c(green);
+	line-height: 28px;
+}
+
+//Libro
+%texto-libro, .texto-libro {
+	@extend %cormorant-regular;
+	font-size: 18px;
+	line-height: 21pt;
+	color: c(green);
+}
+
+%parrafo-libro, .parrafo-libro {
+	@extend %cormorant-light-italic;
+	font-size: 15px;
+	color: c(green-light);
+	line-height: 25px;
+}
+
+%cita-libro, .cita-libro {
+	@extend %cormorant-regular;
+	font-size: 15px;
+	color: c(green-light);
+	line-height: 25px;
+}
+
+//Reservaciones
+%texto-reservaciones, .texto-reservaciones {
+	@extend %cormorant-light;
+	font-size: 14px;
+	color: c(green);
+}

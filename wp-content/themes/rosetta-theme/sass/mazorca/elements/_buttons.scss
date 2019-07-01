@@ -1,0 +1,14 @@
+%button {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: transparent;
+	border: none;
+	border: 1px solid c(green);
+	&:hover {
+		background-color: c(green-light);
+		cursor: pointer;
+	}
+}

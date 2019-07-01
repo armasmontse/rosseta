@@ -1,0 +1,25 @@
+%link {
+	cursor: pointer;
+	text-decoration: none;
+
+	&:hover,
+	&:active,
+	.selected {
+	}
+}
+
+//Menú
+%link-menu, .link-menu {
+	@extend %cormorant-regular;
+	font-size: 11px;
+	color: c(green);
+	text-transform: uppercase;
+}
+
+
+%link-contacto, .link-contacto {
+	@extend %sofia-light;
+	color: c(orange);
+	font-size: 12px;
+	text-transform: uppercase;
+}
